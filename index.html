@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-poppins  ">
+
+<nav class="flex items-center w-full h-[80px] bg-white justify-between px-4 md:px-8 sticky top-0 z-10">
+
+  
+    <div class="flex items-center">
+        <img src="images/logo.svg" class="w-24 md:w-auto">
+        <i class="fa-solid fa-bars text-2xl ml-4 md:hidden"></i>
+    </div>
+
+   
+    <div class=" hidden md:flex bg-[#f9f9f9] w-[400px] lg:w-[500px] h-[50px] items-center p-2 rounded">
+
+        <div class="relative group">
+            <a href="#" class="text-black w-[150px] h-[36px] p-2 rounded flex items-center gap-2">
+                All Categories
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+            <div class="absolute left-0 mt-1 w-40 bg-gray-300 shadow-lg hidden group-hover:block">
+                <ul>
+                    <li class="px-4 py-2 bg-blue-600 text-white">All Categories</li>
+                    <li class="px-4 py-2 hover:bg-gray-400">Groceries</li>
+                    <li class="px-4 py-2 hover:bg-gray-400">Drinks</li>
+                    <li class="px-4 py-2 hover:bg-gray-400">Chocolates</li>
+                </ul>
+            </div>
+        </div>
+
+        <input type="search" placeholder="Search products"
+            class="w-full h-[36px] p-2 rounded outline-none">
+
+        <i class="fa-solid fa-magnifying-glass px-4"></i>
+    </div>
+
+    
+    <ul class="hidden md:flex gap-6 font-bold">
+        <li>HOME</li>
+        <li>PAGES</li>
+    </ul>
+
+     
+    <div class="flex items-center gap-4 text-xl">
+        <i class="fa-solid fa-circle-user"></i>
+        <i class="fa-solid fa-inbox hidden sm:block"></i>
+        <i class="fa-brands fa-discord hidden sm:block"></i>
+    </div>
+
+</nav>
+
+   <section  class="bg-cover bg-center h-auto md:h-screen px-4"style="background-image: url('images/banner-1.jpg');">
+
+    <div class="w-full md:w-1/2 h-full flex flex-col justify-center">
+
+        
+        <div class="text-center md:text-left">
+
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-[72px] font-normal">
+                <span class="text-[#6BB252] font-bold">Organic</span> Foods at <br>
+                your <span class="font-bold">Doorsteps</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl md:text-2xl mt-4 mb-6">
+                Dignissim massa diam elementum
+            </p>
+ 
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <button class="w-full sm:w-[195px] h-[50px] md:h-[57px] bg-[#6BB252] rounded-full hover:bg-[#FF7F00] transition duration-500">
+                    START SHOPPING
+                </button>
+
+                <button class="w-full sm:w-[133px] h-[50px] md:h-[57px] bg-black text-white rounded-full hover:bg-[#232323] transition duration-500">
+                    JOIN NOW
+                </button>
+            </div>
+
+        </div>
+
+         
+        <div class="flex flex-col sm:flex-row gap-6 sm:gap-10 mt-10 text-center md:text-left">
+
+            <div>
+                <p class="font-bold text-2xl sm:text-3xl md:text-[37px]">14k+</p>
+                <p>Product <br> Varieties</p>
+            </div>
+
+            <div>
+                <p class="font-bold text-2xl sm:text-3xl md:text-[37px]">50k+</p>
+                <p>Happy <br> Customers</p>
+            </div>
+
+            <div>
+                <p class="font-bold text-2xl sm:text-3xl md:text-[37px]">10+</p>
+                <p>Store <br> Locations</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="flex flex-col md:flex-row   items-center justify-center  text-white p-[20px]   ">
+        <div class="w-[100%] md:w-[25%] h-[176px] bg-[#6BB252] flex items-center justify-center p-[20px]">
+            <div><i class="fa-solid fa-arrows-rotate text-[40px] mr-[20px]"></i></div>
+            <div>
+                <p class="font-bold">Fresh from farm</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-[100%] md:w-[25%] h-[176px] bg-[#364127] flex items-center justify-center p-[20px]">
+            <div><i class="fa-solid fa-leaf text-[40px]  mr-[20px]"></i></div>
+            <div>
+                <p class="font-bold">100% Organic</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-[100%] md:w-[25%] h-[176px] bg-[#F95F09] flex  items-center justify-center p-[20px]">
+            <div><i class="fa-solid fa-truck text-[40px]  mr-[20px]"></i>
+
+            </div>
+            <div>
+                <p class="font-bold">Free delivery</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div>
+        <h1 class="font-bold text-3xl text-center mt-[50px] underline">Category</h1>
+    </div>
+
+    <div class="flex flex-wrap gap-[20px] items-center justify-center  mt-[100px]">
+
+        <div class="flex flex-col items-center">
+
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-1.jpg" class="object-cover w-full h-full">
+
+            </div>
+            <p>Fruits and vegs</p>
+        </div>
+
+
+        <div class="flex flex-col items-center">
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-2.jpg" class="object-cover w-full h-full"></div>
+            <p>Breads and Sweets</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-3.jpg" class="object-cover w-full h-full"></div>
+            <p>fruits and veges</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-4.jpg" class="object-cover w-full h-full"></div>
+
+            <p>fruits and veges</p>
+        </div>
+
+
+        <div class="flex flex-col items-center">
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-5.jpg" class="object-cover w-full h-full"></div>
+            <p>Meat Product</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-6.jpg" class="object-cover w-full h-full"></div>
+            <p>Breads and Sweets</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-7.jpg" class="object-cover w-full h-full"></div>
+            <p>fruits and vege</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+
+            <div class="w-[160px] h-[160px] bg-gray-300 rounded-full overflow-hidden"><img
+                    src="images/category-thumb-8.jpg" class="object-cover w-full h-full"></div>
+            <p>Breads</p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="text-center text-3xl font-bold mt-[70px]">Best selling products</div>
+
+    <div class="flex items-center justify-evenly flex-wrap mt-14">
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-1.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-2.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-3.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-4.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-5.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-6.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-7.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-8.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-9.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-10.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-24 px-4 md:px-10">
+ 
+    <div>
+        <img src="images/banner-ad-1.jpg"
+            class="w-full h-auto md:h-full object-cover rounded-lg">
+    </div>
+
+  
+    <div class="flex flex-col gap-6">
+
+        <img src="images/banner-ad-2.jpg"
+            class="w-full h-[200px] sm:h-[220px] md:h-1/2 object-cover rounded-lg">
+
+        <img src="images/banner-ad-3.jpg"
+            class="w-full h-[200px] sm:h-[220px] md:h-1/2 object-cover rounded-lg">
+
+    </div>
+
+</div>
+
+
+
+    <div class="text-center text-3xl font-bold mt-[70px]">Featured Products</div>
+
+    <div class="flex items-center justify-evenly flex-wrap mt-14">
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-11.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-12.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-13.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-14.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-15.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+ <div class="bg-[url('images/banner-newsletter.jpg')] bg-cover bg-center w-full py-10 mt-20">
+
+    <div class="flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
+
+         
+        <div class="w-full md:w-1/2 text-center md:text-left text-white">
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
+                Get 25% Discount on <br> your first purchase
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg mt-4">
+                Just Sign Up & Register it now to become member.
+            </p>
+        </div>
+
+     
+        <div class="w-full md:w-1/2 flex flex-col items-center md:items-start gap-3">
+
+            <input type="text" placeholder="Enter Your Name"
+                class="w-full sm:w-[300px] h-10 px-4 rounded-full outline-none">
+
+            <input type="email" placeholder="Enter Your Email Address"
+                class="w-full sm:w-[300px] h-10 px-4 rounded-full outline-none">
+
+            <input type="number" placeholder="Quantity"
+                class="w-full sm:w-[300px] h-10 px-4 rounded-full outline-none">
+
+            <select class="w-full sm:w-[300px] h-10 rounded-full px-3 outline-none">
+                <option selected disabled>Choose Your Favorite Product</option>
+                <option>Fresh Orange</option>
+                <option>Ice cream</option>
+                <option>Fresh Fish</option>
+                <option>Apple</option>
+                <option>Fruits</option>
+                <option>Breads</option>
+            </select>
+
+            <input type="submit" value="Buy Now"
+                class="w-full sm:w-[120px] h-10 bg-white rounded-full hover:bg-green-500 hover:text-white cursor-pointer transition duration-300">
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+     <div class="text-center text-3xl font-bold mt-[70px]">Most Popular Products</div>
+
+    <div class="flex items-center justify-evenly flex-wrap mt-14">
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-16.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-17.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-18.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-19.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-20.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+       </div>
+
+
+
+
+      
+     <div class="text-center text-3xl font-bold mt-[70px]">Just Arrived Products</div>
+
+    <div class="flex items-center justify-evenly flex-wrap mt-14">
+
+
+
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-21.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-22.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-23.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-24.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+        <div class=" group w-[280px] h-[410px]  flex  flex-col items-center gap-3 transition-all duration-300 
+            hover:-translate-y-2 
+            hover:shadow-[0_20px_50px_#F95F09] rounded-lg">
+            <img src="images/product-thumb-25.png" class="w-[158px] h-[210px] object-contain mt-[25px] ">
+            <p>Whole Wheat Sandwich Bread</p>
+            <div class="text-yellow-400 flex gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+                <p class="line-through text-black-500 ">₹500</p>
+
+                <p class="text-green-600 font-bold">₹299</p>
+
+                <a href="#" class="px-2 py-1 border ">40% OFF</a>
+
+            </div>
+
+
+            <div class=" hidden group-hover:flex  items-center justify-evenly w-full ">
+                <input type="number" class="w-[50px] h-[30px] text-center border border-gray-600" placeholder="1">
+                <a href="#" class="w-[120px] h-[40px] bg-green-600 text-center rounded   pt-[5px]"><i
+                        class="fa-solid fa-cart-shopping  "></i>Add to Carts</a>
+                <i class="fa-regular fa-heart w-[40px] h-[40px]  border border-black hover:bg-black hover:text-white
+   flex items-center justify-center rounded"></i>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    <div class="text-center text-2xl sm:text-3xl font-bold mt-16">
+    Our Recently Blogs
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4 md:px-10">
+
+    <!-- CARD 1 -->
+    <div class="w-full flex flex-col rounded-lg p-4 md:p-6 border border-[#ccc] shadow-xl hover:translate-y-[-10px] transition-all duration-500">
+
+        <img src="images/post-thumbnail-1.jpg" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg">
+
+        <div class="flex flex-wrap gap-4 mt-4 text-sm md:text-base">
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-calendar"></i>
+                <p>24 APRIL 2026</p>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-tag"></i>
+                <p>TIPS AND TRICKS</p>
+            </div>
+        </div>
+
+        <h1 class="text-lg md:text-2xl font-bold mt-4">
+            Top 10 casual look ideas to dress up your kids
+        </h1>
+
+        <p class="mt-3 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt...
+        </p>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="w-full flex flex-col rounded-lg p-4 md:p-6 border border-[#ccc] shadow-xl hover:translate-y-[-10px] transition-all duration-500">
+
+        <img src="images/post-thumbnail-2.jpg" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg">
+
+        <div class="flex flex-wrap gap-4 mt-4 text-sm md:text-base">
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-calendar"></i>
+                <p>28 APRIL 2026</p>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-tag"></i>
+                <p>TRENDING</p>
+            </div>
+        </div>
+
+        <h1 class="text-lg md:text-2xl font-bold mt-4">
+            10 Different Types of comfortable clothes ideas for women
+        </h1>
+
+        <p class="mt-3 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt...
+        </p>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="w-full flex flex-col rounded-lg p-4 md:p-6 border border-[#ccc] shadow-xl hover:translate-y-[-10px] transition-all duration-500">
+
+        <img src="images/post-thumbnail-3.jpg" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg">
+
+        <div class="flex flex-wrap gap-4 mt-4 text-sm md:text-base">
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-calendar"></i>
+                <p>30 APRIL 2026</p>
+            </div>
+            <div class="flex items-center gap-1">
+                <i class="fa-solid fa-tag"></i>
+                <p>INSPIRATION</p>
+            </div>
+        </div>
+
+        <h1 class="text-lg md:text-2xl font-bold mt-4">
+            Latest trends of wearing street wears supremely
+        </h1>
+
+        <p class="mt-3 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipi elit...
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+ <div class="flex justify-center items-center px-4">
+
+    <div class="bg-[#FFC107] w-full max-w-6xl mt-20 flex flex-col md:flex-row rounded-xl overflow-hidden">
+
+        <!-- LEFT CONTENT -->
+        <div class="w-full md:w-1/2 flex items-center justify-center flex-col text-center md:text-left p-6">
+
+            <h1 class="text-2xl sm:text-3xl font-bold">
+                Download Organic App
+            </h1>
+
+            <p class="text-[#747474] text-sm sm:text-base md:text-lg mt-3">
+                Online Orders made easy, fast and reliable
+            </p>
+
+            <div class="flex gap-3 mt-4 justify-center md:justify-start">
+                <img src="images/img-app-store.png" class="w-32 sm:w-36">
+                <img src="images/img-google-play.png" class="w-32 sm:w-36">
+            </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="w-full md:w-1/2 flex items-end justify-center">
+
+            <img src="images/banner-onlineapp.png"
+                class="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-auto object-contain">
+
+        </div>
+
+    </div>
+
+</div>
+
+  
+    <div class="flex items-center justify-evenly gap-2 mt-20 flex-wrap">
+        <div class="w-60 h-48 border border-[#ccc] rounded-lg pl-8 p-4">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+                <h1 class="text-xl font-bold mt-4">Free Delivery</h1>
+                <p class="mt-4 text-lg text-[#747474]">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-60 h-48 border border-[#ccc] rounded-lg pl-8 p-4">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+                <h1 class="text-xl font-bold mt-4">Free Delivery</h1>
+                <p class="mt-4 text-lg text-[#747474]">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-60 h-48 border border-[#ccc] rounded-lg pl-8 p-4">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+                <h1 class="text-xl font-bold mt-4">Free Delivery</h1>
+                <p class="mt-4 text-lg text-[#747474]">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-60 h-48 border border-[#ccc] rounded-lg pl-8 p-4">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+                <h1 class="text-xl font-bold mt-4">Free Delivery</h1>
+                <p class="mt-4 text-lg text-[#747474]">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+        <div class="w-60 h-48 border border-[#ccc] rounded-lg pl-8 p-4">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+                <h1 class="text-xl font-bold mt-4">Free Delivery</h1>
+                <p class="mt-4 text-lg text-[#747474]">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+        </div>
+         
+    </div>
+
+
+
+     
+<div class="p-6 md:p-10 pt-16">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+      
+        <div>
+            <img src="images/logo.svg">
+
+            <div class="flex gap-4 mt-6 flex-wrap">
+                <i class="fa-brands fa-facebook w-10 h-10 flex items-center justify-center border border-[#ccc] text-[#747474] hover:bg-[#747474] hover:text-black cursor-pointer"></i>
+                <i class="fa-brands fa-linkedin w-10 h-10 flex items-center justify-center border border-[#ccc] text-[#747474] hover:bg-[#747474] hover:text-black cursor-pointer"></i>
+                <i class="fa-brands fa-youtube w-10 h-10 flex items-center justify-center border border-[#ccc] text-[#747474] hover:bg-[#747474] hover:text-black cursor-pointer"></i>
+                <i class="fa-brands fa-amazon w-10 h-10 flex items-center justify-center border border-[#ccc] text-[#747474] hover:bg-[#747474] hover:text-black cursor-pointer"></i>
+                <i class="fa-brands fa-instagram w-10 h-10 flex items-center justify-center border border-[#ccc] text-[#747474] hover:bg-[#747474] hover:text-black cursor-pointer"></i>
+            </div>
+        </div>
+
+     
+        <div>
+            <h1 class="text-xl md:text-2xl font-bold">Organic</h1>
+            <ul class="text-[#747474] text-sm md:text-lg mt-3 space-y-1">
+                <li>About us</li>
+                <li>Condition</li>
+                <li>Our journals</li>
+                <li>Careers</li>
+                <li>Ultras Press</li>
+                <li>Affiliate Programme</li>
+            </ul>
+        </div>
+
+       
+        <div>
+            <h1 class="text-xl md:text-2xl font-bold">Quick Links</h1>
+            <ul class="text-[#747474] text-sm md:text-lg mt-3 space-y-1">
+                <li>Offers</li>
+                <li>Discount Coupons</li>
+                <li>Store</li>
+                <li>Track order</li>
+                <li>Shop</li>
+                <li>Info</li>
+            </ul>
+        </div>
+
+        
+        <div>
+            <h1 class="text-xl md:text-2xl font-bold">Customer Service</h1>
+            <ul class="text-[#747474] text-sm md:text-lg mt-3 space-y-1">
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>Privacy & Policy</li>
+                <li>Returns & Refunds</li>
+                <li>Cookie Guidelines</li>
+                <li>Delivery Information</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+    
+
+</body>
+
+
+</html>
